@@ -94,7 +94,7 @@ Block and Transaction objects defined in the specification contain a lot of prop
 - If you end up with time left, feel free to include tests or address performance concerns.
 
 ## Deliverables
-Please email [careers@relayer.tech](careers@relayer.tech) with either a `.zip` file of your code or a link to a public repository. In the subject line, please include your full name followed by "Technical Challenge" (e.g. "Vitalik Buterin Technical Challenge").
+Please email [careers@relayer.tech](careers@relayer.tech) with either a `.zip` file of your code or a link to a public repository (please do not open a pull request). In the subject line, please include your full name followed by "Technical Challenge" (e.g. "Vitalik Buterin Technical Challenge").
 - Please include all the code that makes up your Python project, including your SQL query.
 - Please include a `.txt` file with the resulting block number and total volume from your SQL query in part 2 of the task.
 - Please include a `README` file with any information you think is relevant to running and understanding your code. If interested, the quality/detail of your `README` file can be supplemented with a short video (<5min), such as a Loom, where you share your screen and explain your solution.
