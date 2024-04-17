@@ -11,4 +11,24 @@ This Python script connects to an Ethereum JSON-RPC endpoint, retrieves blockcha
 
 ### Usage
 1. Clone the repository or download the script script.py.
-2. 
+2. Install the required libraries.
+3. Run the script with the following command:
+   ```
+   python3 script.py <JSON-RPC endpoint> <SQLite file path> <block range>
+   ```
+4. Replace <JSON-RPC endpoint>, <SQLite file path>, and <block range> with your specific values. For example:
+   ```
+   python3 script.py https://rpc.example.com/key db.sqlite3 1000000-1000100
+   ```
+5. The script will connect to the JSON-RPC endpoint, retrieve block data within the specified range, and store it in the SQLite database.
+
+### Functionality
+
+- connect_to_rpc(endpoint): Connects to the Ethereum JSON-RPC endpoint.
+- create_tables(cursor): Creates the necessary tables in the SQLite database for storing block and transaction data.
+- retrieve_and_store_transactions(web3, start_block, end_block, cursor): Retrieves block data and associated transactions within the specified block range and stores them in the SQLite database.
+
+### Additional Notes
+- The script converts transaction values from Wei to **Gwei** (GigaWei) for storage.
+- Error handling is included for connection failures and invalid input.
+- Ensure that the required dependencies are installed before running the script.
