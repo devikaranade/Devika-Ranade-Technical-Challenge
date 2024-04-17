@@ -7,9 +7,9 @@ Analyzing and querying blockchain data is difficult. For all the novelty and inn
 The task to complete is comprised of two parts:
 
 ### Part 1
-Write a Python program that retrieves Ethereum Mainnet transactions within a given block range and persists them to a database (for the sake of simplicity an SQLite file). It's expected that your program will take in at least three command line inputs:
+Write a Python program that retrieves Ethereum Mainnet transactions within a given block range and persists them to a database. You’re free to use SQLite or a more sophisticated relational database, like PostgreSQL. It's expected that your program will take in at least three command line inputs:
 - A JSON-RPC endpoint to call an Ethereum client (e.g. `https://rpc.quicknode.pro/key`)
-- The path of the SQLite file to write to (e.g. `db.sqlite3`)
+- The path of the SQLite file to write to or a connection URI (e.g. `db.sqlite3` or `postgresql://user:password@localhost:5432/database`)
 - A block range, formatted as "{start}-{end}", (e.g. `200-300`)
    
 Running your program should look similar to the following:
@@ -84,10 +84,12 @@ Block and Transaction objects defined in the specification contain a lot of prop
 - **to** (hexadecimal string) -- address that received the transaction
 - **value** (hexadecimal string) -- amount of **wei** sent with the transaction
     - Wei is a denomination of Ether, the native token on Ethereum. `1 Ether = 10e-18 Wei`
+    - Performing an integer conversion can result in values greater than a signed 8-byte integer
 
 ## Guidelines
 - You're free to use any 3rd-party packages that you find helpful.
 - You're free to use whichever version of Python 3 you'd like.
+- You’re free to use SQLite or a more sophisticated relational database, like PostgreSQL.
 - It's expected you'll spend roughly 3-4 hours to complete this task. We want to be respectful of your time – please do not feel obligated to work on it any longer than that.
     - No piece of software is perfect – feel free to document functionality you would add or do differently.
 - You'll have 1 week to complete your solution from the time you receive this document. If we don't receive your solution within 1 week and have received no communication, we will assume you are no longer interested in the role. Please email [careers@relayer.tech](careers@relayer.tech) if you need more time.
