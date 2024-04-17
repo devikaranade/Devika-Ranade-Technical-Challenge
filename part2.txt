@@ -1,0 +1,19 @@
+SQL Query to pull resulting block number and total volume:
+
+SELECT t.block_number, SUM(t.value) AS total_volume
+FROM transactions t
+INNER JOIN blocks b ON t.block_hash = b.hash
+WHERE b.timestamp BETWEEN '2024-01-01 00:00:00' AND '2024-01-01 00:30:00'
+GROUP BY t.block_number
+ORDER BY total_volume DESC
+LIMIT 1;
+
+Block Range: 18911300-18911320
+
+Result: 
+
+----------------------------- 
+ block_number | total_volume |
+ ----------------------------
+ 18911312     | 193063360307 |
+----------------------------- 
