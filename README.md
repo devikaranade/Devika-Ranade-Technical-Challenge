@@ -34,12 +34,20 @@ This Python script connects to an Ethereum JSON-RPC endpoint, retrieves blockcha
 - Error handling is included for connection failures and invalid input.
 - Ensure that the required dependencies are installed before running the script.
 
-Output Part2: 
+### Output Part2: 
 
 <img width="700" alt="output" src="https://github.com/devikaranade/Devika-Ranade-Technical-Challenge/assets/41178447/99587c26-35c9-4bc0-92d4-e81da799dd99">
 
 
 <img width="700" alt="sql-query" src="https://github.com/devikaranade/Devika-Ranade-Technical-Challenge/assets/41178447/989466d5-8720-469e-bae7-72f62aa6ec73">
+
+
+### Future Scope and Improvements
+- Optimized Data Retrieval: Explore ways to optimize data retrieval, such as batching requests or using asynchronous methods to improve performance.
+
+- Additional Data Fields: Add more info from Ethereum blocks and transactions as needed for specific tasks.
+
+- Data Validation: Check data carefully to make sure it's accurate and complete, avoiding any anomalies with the stored data, and many more...
 
 
 
