@@ -17,7 +17,7 @@ This Python script connects to an Ethereum JSON-RPC endpoint, retrieves blockcha
    ```
    python3 script.py <JSON-RPC endpoint> <SQLite file path> <block range>
    ```
-4. Replace <JSON-RPC endpoint>, <SQLite file path>, and <block range> with your specific values. For example:
+4. Replace ```JSON-RPC endpoint```, ```SQLite file path```, and ```block range``` with your specific values. For example:
    ```
    python3 script.py https://mainnet.infura.io/v3/key db.sqlite3 18911300-18911320
    ```
