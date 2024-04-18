@@ -16,7 +16,7 @@ def connect_to_rpc(endpoint):
         print(f"Error connecting to JSON-RPC endpoint: {e}")
         sys.exit(1)
 
-# creating tables for storing da
+# creating tables for storing database
 def create_tables(cursor):
     cursor.execute('''CREATE TABLE IF NOT EXISTS blocks
                     (hash TEXT PRIMARY KEY,
